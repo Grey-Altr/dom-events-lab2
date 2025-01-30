@@ -64,8 +64,11 @@ const handleOpClick = (event) => {
     display.innerHTML = 0;
 };
 
-const handleClearButton = (event) => {
-
+const handleClearButton = () => {
+    display.innerHTML = 0;
+    firstNum = '';
+    secNum = '';
+    operator = null;
 };
 
 const handleEqButton = (event) => {
