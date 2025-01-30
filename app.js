@@ -2,8 +2,8 @@
 
 /*-------------------------------- Variables --------------------------------*/
 
-let firstNum = '';
-let secNum = '';
+let firstNum = '1';
+let secNum = '1';
 let operator = '';
 
 /*------------------------ Cached Element References ------------------------*/
@@ -34,6 +34,22 @@ const subtract = () => {
 
 const add = () => {
     return firstNum + secNum;
+};
+
+const calculation = () => {
+    let total;
+    if (operator === 'divide') {
+        total = divide();
+    }
+    if (operator === 'mult') {
+        total = mult();
+    }
+    if (operator === 'subtract') {
+        total = subtract();
+    }
+    if (operator === 'add') {
+        total = add();
+    }
 };
 
 const handleNumberClick = (event) => {
