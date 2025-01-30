@@ -15,6 +15,7 @@ let subButton = document.querySelector('.subtract');
 let clearButton = document.querySelector('.operator.C');
 let eqButton = document.querySelector('.equals');
 let addButton = document.querySelector('.add');
+let display = document.querySelector('.display');
 
 /*----------------------------- Event Listeners -----------------------------*/
 
