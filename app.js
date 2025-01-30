@@ -10,12 +10,17 @@ let operator = '';
 
 let numButtons = document.querySelectorAll('.number');
 let opButtons = document.querySelectorAll('.operator');
+let divideButton = document.querySelector('.divide');
 let multButton = document.querySelector('.multiply');
 let subButton = document.querySelector('.subtract');
 let clearButton = document.querySelector('.operator.C');
 let eqButton = document.querySelector('.equals');
 let addButton = document.querySelector('.add');
 let display = document.querySelector('.display');
+
+/*-------------------------------- Functions --------------------------------*/
+
+
 
 /*----------------------------- Event Listeners -----------------------------*/
 
@@ -29,4 +34,4 @@ opButtons.forEach((operator) => {
 
 clearButton.addEventListener('click', handleClearButton);
 eqButton.addEventListener('click', handleEqButton);
-/*-------------------------------- Functions --------------------------------*/
+
