@@ -71,8 +71,9 @@ const handleClearButton = () => {
     operator = null;
 };
 
-const handleEqButton = (event) => {
-
+const handleEqButton = () => {
+    secNum = parseInt(display.innerHTML);
+    calculateAndDisplay();
 };
 
 /*----------------------------- Event Listeners -----------------------------*/
