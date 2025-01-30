@@ -71,7 +71,9 @@ const handleEqButton = (event) => {
 /*----------------------------- Event Listeners -----------------------------*/
 
 numButtons.forEach((number) => {
-    number.addEventListener('click', handleNumberClick);
+    number.addEventListener('click', (event) => {
+        display.textContent = Number(display.textContent + event.target.textContent);
+    });
 });
 
 opButtons.forEach((operator) => {
