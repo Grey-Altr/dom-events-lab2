@@ -36,6 +36,22 @@ const add = () => {
     return firstNum + secNum;
 };
 
+const handleNumberClick = (event) => {
+
+};
+
+const handleOpClick = (event) => {
+
+};
+
+const handleClearButton = (event) => {
+
+};
+
+const handleEqButton = (event) => {
+
+};
+
 /*----------------------------- Event Listeners -----------------------------*/
 
 numButtons.forEach((number) => {
