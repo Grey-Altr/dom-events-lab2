@@ -19,4 +19,14 @@ let display = document.querySelector('.display');
 
 /*----------------------------- Event Listeners -----------------------------*/
 
+numButtons.forEach((number) => {
+    number.addEventListener('click', handleNumberClick);
+});
+
+opButtons.forEach((operator) => {
+    operator.addEventListener('click', handleOpClick);
+});
+
+clearButton.addEventListener('click', handleClearButton);
+eqButton.addEventListener('click', handleEqButton);
 /*-------------------------------- Functions --------------------------------*/
