@@ -36,7 +36,7 @@ const add = () => {
     return firstNum + secNum;
 };
 
-const calculation = () => {
+const calculateAndDisplay = () => {
     let total;
     if (operator === 'divide') {
         total = divide();
@@ -50,6 +50,7 @@ const calculation = () => {
     if (operator === 'add') {
         total = add();
     }
+    display.innerHTML = total;
 };
 
 const handleNumberClick = (event) => {
