@@ -2,8 +2,8 @@
 
 /*-------------------------------- Variables --------------------------------*/
 
-let firstNum = '1';
-let secNum = '1';
+let firstNum = '';
+let secNum = '';
 let operator = '';
 
 /*------------------------ Cached Element References ------------------------*/
@@ -59,20 +59,20 @@ const calculateAndDisplay = () => {
 // };
 
 const handleOpClick = (event) => {
-    firstNum = parseInt(display.innerHTML);
+    firstNum = parseInt(display.innerText);
     operator = event.target.class;
     display.innerHTML = 0;
 };
 
 const handleClearButton = () => {
-    display.innerHTML = 0;
+    display.innerText = 0;
     firstNum = '';
     secNum = '';
     operator = null;
 };
 
 const handleEqButton = () => {
-    secNum = parseInt(display.innerHTML);
+    secNum = parseInt(display.innerText);
     calculateAndDisplay();
 };
 
