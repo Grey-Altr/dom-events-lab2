@@ -20,7 +20,21 @@ let display = document.querySelector('.display');
 
 /*-------------------------------- Functions --------------------------------*/
 
+const divide = () => {
+    return firstNum / secNum;
+}
 
+const mult = () => {
+    return firstNum * secNum;
+};
+
+const subtract = () => {
+    return firstNum - secNum;
+};
+
+const add = () => {
+    return firstNum + secNum;
+};
 
 /*----------------------------- Event Listeners -----------------------------*/
 
