@@ -53,12 +53,15 @@ const calculateAndDisplay = () => {
     display.innerHTML = total;
 };
 
-const handleNumberClick = (event) => {
+// deprecated
+// const handleNumberClick = (event) => {
 
-};
+// };
 
 const handleOpClick = (event) => {
-
+    firstNum = parseInt(display.innerHTML);
+    operator = event.target.class;
+    display.innerHTML = 0;
 };
 
 const handleClearButton = (event) => {
